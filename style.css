@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;400&display=swap');
+
+/* 1. global config 
+
+    / all margins and paddings set to 0
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 2. global style
+    
+    / set all default font family Noto Sans which you can get at google fonts
+    / set all the the line spacing to 1.4
+    / remove all anchor tag underline
+    / set a default margin for all paragraphs to 0.75 for top and bottom and 0 to left and right
+
+*/
+* {
+    font-family: 'Noto Sans Mono', monospace;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75 0;
+}
+/* 3. settings
+
+    / create a rule where you can control the maximum width of your content
+    while adapting to browser widths
+    / create a rule to center all contents under this setting
+    / create a rule to set all elements inside of this setting to have
+    a "space inside" with a "0" from top and bottom and 32px using the "rem" units
+    in left and right
+    / and lastly set a rule on overflowing elements inside to hidden.
+
+*/
+
+#main-content .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 2rem;
+    color: #333;
+    
+}
+/* class names:
+     div1: content=container
+     abcs=contents
+     abc=content*/
+
+     #main-content .title{
+         text-align: center;
+         padding: 1rem;
+        margin-bottom: 3rem;
+    }
+    span{
+        color:#ff7600;
+        margin-right: 1rem;
+    }
+    /* end of title */
+    #main-content .content {
+        margin-bottom: 1rem;
+    }
+     
+    #main-content .title{
+        font-size: 3rem;
+    }
+    #main-content .content h3{
+        line-height: 3rem;
+    }
+    #main-content .contents{
+        display: flex;
+        flex-direction: row;
+        padding: 0 2rem;
+    }
+    #main-content .content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+     
+    #main-content .contents .content{
+        text-align: left;
+        overflow: hidden;
+        padding-left: 20px;
+    }
+     
+    #main-content .content i{
+        object-fit: contain;
+        margin-right: 1rem;
+    }
+    i{
+        background-color:#f8e2cf ;
+        padding: 15px 15px;
+        border-radius: 100%;
+    }
+
+    #main-content {
+        background-color: #fdf6f0;
+    }
+/* 
+    4.  Collaborative Task for Assessment
+
+    4.1  Your goal is to apply pertinent rules to produce same result(output)
+    as what the figure displays in assessment_output.png.
+
+    Color Values
+    / #f8e2cf
+    / #ff7600
+    / #fdf6f0
+    / #333
+*/
